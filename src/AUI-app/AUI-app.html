@@ -1,6 +1,6 @@
 <link rel="import" href="../../bower_components/polymer/polymer-element.html">
 
-<dom-module id="AUI-app">
+<dom-module id="aui-app">
   <template>
     <style>
       :host {
@@ -15,8 +15,8 @@
      * @customElement
      * @polymer
      */
-    class AUIApp extends Polymer.Element {
-      static get is() { return 'AUI-app'; }
+    class auiApp extends Polymer.Element {
+      static get is() { return 'aui-app'; }
       static get properties() {
         return {
           prop1: {
@@ -27,6 +27,6 @@
       }
     }
 
-    window.customElements.define(AUIApp.is, AUIApp);
+    window.customElements.define(auiApp.is, auiApp);
   </script>
 </dom-module>
