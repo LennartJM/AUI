@@ -62,7 +62,7 @@ class TafelToekennenApp extends PolymerElement {
           width: 300px;
         }
         </style>
-        <h1>Tafels :</h1>
+        <h1>Statussen van de tafels :</h1>
         <div class="content">
             <table>
                 <tr style="width:300px !important;">
