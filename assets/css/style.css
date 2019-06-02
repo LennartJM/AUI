@@ -40,10 +40,10 @@ body {
 }
 
 @font-face {
-font-family: "Harabara Bold";
-src: url("css/fonts/Harabara.eot");
+font-family: "sailregular";
+src: url("css/fonts/sailregular.eot");
 src:
-url("css/fonts/Harabara.woff") format("woff"),
-url("css/fonts/Harabara.otf") format("opentype"),
-url("css/fonts/Harabara.svg#filename") format("svg");
+url("css/fonts/sailregular.woff") format("woff"),
+url("css/fonts/sailregular.otf") format("opentype"),
+url("css/fonts/sailregular.svg#filename") format("svg");
 }
