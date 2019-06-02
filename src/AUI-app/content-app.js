@@ -97,9 +97,9 @@ class ContentApp extends PolymerElement {
       Gerechten:{
         type:Array,
          value: [
-          "Bai pangang",
-          "Witte rijst",
-          ""
+          "Hamburger speciaal",
+          "HU speciaal",
+          "Euro Burger"
         ]
       },
       Bestellingen:{
@@ -126,7 +126,7 @@ class ContentApp extends PolymerElement {
           }
         }
 
-        localStorage.setItem("lijst",JSON.stringify(new_array));
+        localStorage.setItem("gerecht-lijst",JSON.stringify(new_array));
 
         alert("De gerechten zijn in behandeling");
         document.location.reload(true);
