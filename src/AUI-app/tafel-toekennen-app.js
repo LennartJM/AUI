@@ -8,14 +8,14 @@ import 'high-select/lib/high-select.js';
  */
 
 
-class GerechtContentApp extends PolymerElement {
+class TafelToekennenApp extends PolymerElement {
   static get template() {
     return html`
         <style>
 
             :host {
               display: block;
-              background-image: url("../../assets/img/wallpaper.jpg");
+              background-image: url("../../assets/img/bl.jpg");
               background-size: cover !important;
               background-repeat: no-repeat !important;
               background-position: center center !important;
@@ -84,7 +84,7 @@ class GerechtContentApp extends PolymerElement {
             </table>
       </div>
 
-    ;
+    `;
   }
   static get properties() {
     return {
@@ -114,4 +114,4 @@ class GerechtContentApp extends PolymerElement {
 
 }
 
-window.customElements.define('tafel-toekennen', GerechtContentApp);
+window.customElements.define('tafel-toekennen', TafelToekennenApp);
