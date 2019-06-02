@@ -63,12 +63,9 @@ class HeaderApp extends PolymerElement {
           {naam: "Terug naar home screen", link: "/"},
           {naam: "Bestelling invoeren", link: "/bestel.html"},
           {naam: "Gerecht status", link: "/status-gerecht.html"},
-<<<<<<< HEAD
-          {naam: "Tafel toekennen", link: "/tafeltoekennen.html"}
-=======
           {naam: "Tafel toevoegen", link: "/tafel-toevoegen.html"},
           {naam: "Tafel toekennen", link: "/tafel-toekennen.html"}
->>>>>>> e4e9a3463a04bd5cd4cb072c16a88657ade4be24
+
 
         ]
       }
