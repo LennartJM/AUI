@@ -23,7 +23,6 @@ class TafelToekennenApp extends PolymerElement {
 
             }
 
-
             .content{
             padding:20px;
 
@@ -36,25 +35,25 @@ class TafelToekennenApp extends PolymerElement {
             }
 
             table, th, td{
-                border: 1px solid white;
-                color: white;
+                border: 1px solid black;
+                color: black;
             }
             h1 {
-              color: white;
+              color: black;
             }
 
             #caller {
-              color: white;
+              color: black;
             }
                     button,
         a {
           margin-top: 30px;
           padding: 5px 10px;
           background: none;
-          border-color: white;
+          border-color: black;
           font-size: 20px;
-          color: white;
-          border: 2px solid white;
+          color: black;
+          border: 2px solid black;
           text-decoration: none;
         }
 

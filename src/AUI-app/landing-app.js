@@ -14,7 +14,6 @@ class LandingApp extends PolymerElement {
 
         }
 
-
         .wallp {
           background-image: url("../../assets/img/bg-1.jpg");
           background-size: cover !important;
@@ -53,13 +52,11 @@ class LandingApp extends PolymerElement {
           color: black;
         }
 
-
       </style>
         <div class="wallp">
             <h1 class="welcome"> [[welkom]] </h1>
             <a href="bestel.html">Naar Bestelmenu</a>
         </div>
-
     `;
   }
   static get properties() {

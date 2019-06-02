@@ -6,8 +6,6 @@ import 'high-select/lib/high-select.js';
  * @customElement
  * @polymer
  */
-
-
 class GerechtContentApp extends PolymerElement {
   static get template() {
     return html`
