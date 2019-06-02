@@ -16,7 +16,7 @@ class LandingApp extends PolymerElement {
 
 
         .wallp {
-          background-image: url("../../assets/img/rias.png");
+          background-image: url("../../assets/img/bg-1.jpg");
           background-size: cover !important;
           background-repeat: no-repeat !important;
           background-position: center center !important;
@@ -31,21 +31,26 @@ class LandingApp extends PolymerElement {
         }
 
         a {
-          padding: 5px 10px;
+          padding: 8px 12px;
           background: none;
           border-radius: 24px;
           border-color: white;
-          font-size: 20px;
+          font-size: 36px;
           color: white;
           border: 2px solid white;
           text-decoration: none;
+        }
+
+        a:hover{
+          background-color: white;
+          color: black;
         }
 
 
       </style>
         <div class="wallp">
             <h1 class="welcome"> [[welkom]] </h1>
-            <a href="bestel.html">Naar bestellijst</a>
+            <a href="bestel.html">Naar Bestelmenu</a>
         </div>
 
     `;
@@ -54,7 +59,7 @@ class LandingApp extends PolymerElement {
     return {
       welkom: {
         type: String,
-        value: "Welkom bij restaurant Big Titty Anime Bitches"
+        value: "Welkom bij 030 Burgers"
       }
     };
   }

@@ -1,0 +1,40 @@
+body {
+	background-color: grey;
+}
+
+.content {
+	width: 50%;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.table-info {
+	text-align: center;
+    display: flex;
+}
+
+.table-info div{
+	border: 4px solid black;
+	padding: 20px;
+	width: 80px;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.menu {
+	margin-top: 80px;
+}
+.row {
+    display: flex;
+    border-bottom: 1px #79abe8 solid;
+}
+
+.row span {
+	padding: 37px;
+    width: 10%;
+    font-size: 25px;
+}
+
+.row img {
+	margin-bottom: 5px;
+}
