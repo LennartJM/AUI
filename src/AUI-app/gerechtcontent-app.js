@@ -28,7 +28,7 @@ class GerechtContentApp extends PolymerElement {
                 border-collapse: collapse;
                 text-align: left;
             }
-            
+
             table, th, td{
                 border: 1px solid black;
                 color: black;
@@ -67,26 +67,24 @@ class GerechtContentApp extends PolymerElement {
                         <tr>
                             <td style= width:10%>[[tafels.tafelnr]]</td>
                             <td style = width:20%><high-select search on-change="hello" style="color:black;">
-                                    <high-option>[[tafels.status]]</high-option> 
+                                    <high-option>[[tafels.status]]</high-option>
                                     <template is="dom-repeat" items="{{status}}" as="state">
-                                        <high-option>[[state]]</high-option> 
+                                        <high-option>[[state]]</high-option>
                                     </template>
                                 </high-select></td>
-                                
-                            </td>
                         </tr>
                 </template>
 
             </table>
       </div>
-   
-    `;
+
+    ;
   }
   static get properties() {
     return {
       Tafels:{
         type:Object,
-         value: 
+         value:
           JSON.parse(localStorage.getItem("tafel_lijst"))
       },
       status:{
