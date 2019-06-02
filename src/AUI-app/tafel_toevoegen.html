@@ -1,0 +1,42 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="tafel_toevoegen">
+<template>
+<style>
+:host {
+display: block;
+}
+</style>
+<button raised on-click="handleClick">bereken tafelnummer</button>
+</template>
+<script>
+
+
+/**
+* @customElement
+* @polymer
+*/
+
+class tafel_toevoegen extends Polymer.Element {
+static get is() { return 'tafel_toevoegen'; }
+ handleClick() {
+        var i = 0
+        let new_array = new Array();
+        if (localStorage.getItem("tafel_lijst") === null) {
+          alert("Uw tafel nummer is: 1")
+          new_array.push({tafelnr:1 , status: "vrij"});
+          localStorage.setItem("tafel_lijst",JSON.stringify(new_array)); 
+      }else{
+          var tafellijst = JSON.parse(localStorage.getItem("tafel_lijst"));
+          console.log(tafellijst)
+          var lastTafelnummer = tafellijst.length;
+          var newTafelnummer = lastTafelnummer + 1;
+          alert("Uw tafel nummer is: " + newTafelnummer)
+          tafellijst.push({tafelnr:newTafelnummer, status: "bezet"});
+          localStorage.setItem("tafel_lijst",JSON.stringify(tafellijst)); 
+          }    
+    }
+}
+window.customElements.define('tafel-toevoegen', tafel_toevoegen);
+</script>
+</dom-module>
