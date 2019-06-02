@@ -5,8 +5,6 @@ import '@polymer/paper-input/paper-input.js';
  * @customElement
  * @polymer
  */
-
-
 class ContentApp extends PolymerElement {
   static get template() {
     return html`
@@ -31,7 +29,6 @@ class ContentApp extends PolymerElement {
       .item {
             background-color:blue !important;
         }
-
 
         .content{
           padding:20px;
@@ -89,7 +86,6 @@ class ContentApp extends PolymerElement {
           <a href="/" style="margin-left: 690px;">Annuleer</a>
       </div>
       </div>
-
     `;
   }
 
