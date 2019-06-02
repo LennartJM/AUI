@@ -25,7 +25,7 @@ class ContentApp extends PolymerElement {
           text-align:center;
           color:white;
         }
-
+        
       .item {
             background-color:blue !important;
         }
