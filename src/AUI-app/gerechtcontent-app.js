@@ -74,7 +74,7 @@ class GerechtContentApp extends PolymerElement {
                             <td style = width:20%>[[bestelling.gerecht]]</td>
                             <td style = width:20%>
 
-                                <high-select search on-change="hello" style="color:white;">
+                                <high-select search on-change="hello" style="color:black;">
                                     <high-option>[[bestelling.status]]</high-option>
                                     <template is="dom-repeat" items="{{status}}" as="state">
                                         <high-option>[[state]]</high-option>
@@ -92,10 +92,10 @@ class GerechtContentApp extends PolymerElement {
   }
   static get properties() {
     return {
-      Tafels:{
+      Bestellingen:{
         type:Object,
          value:
-          JSON.parse(localStorage.getItem("gerecht-lijst"))
+          JSON.parse(localStorage.getItem("gerechten_lijst"))
       },
       status:{
         type:Array,
@@ -111,10 +111,10 @@ class GerechtContentApp extends PolymerElement {
   hello(evt){
 
       console.log(evt.path[2].rowIndex);
-      let list = JSON.parse(localStorage.getItem("lijst"));
+      let list = JSON.parse(localStorage.getItem("gerechten_lijst"));
       list[evt.path[2].rowIndex-1].status = evt.path[0].value;
       console.log(list);
-      localStorage.setItem("lijst",JSON.stringify(list));
+      localStorage.setItem("gerechten_lijst",JSON.stringify(list));
   }
 
 }

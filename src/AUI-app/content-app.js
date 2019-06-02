@@ -67,12 +67,13 @@ class ContentApp extends PolymerElement {
               margin-bottom: 50px;
               color:white;
         }
+
       </style>
 
      <div class="content">
      <div class="wrap">
      <h1 class="tel"> Bestel formulier </h1>
-          <span class="tel"> Tafelnummer:</span> <paper-input type="number" class="tafelnr" always-float-label value="{{prop1}}"></paper-input>
+          <span class="tel"> Tafelnummer:</span> <paper-input type="number" class="tafelnr" always-float-label value="{{prop1}}" ></paper-input>
             <searchable-multi placeholder="Search fruits...">
             <select multiple>
                 <option>Euro Burger</option>
@@ -113,10 +114,12 @@ class ContentApp extends PolymerElement {
   }
 
  handleClick() {
-
         let new_array = new Array();
          let multi = this.shadowRoot.querySelector('searchable-multi');
          let input = this.shadowRoot.querySelector('paper-input');
+        if (localStorage.getItem("gerechten_lijst") !== null){
+          new_array = JSON.parse(localStorage.getItem("gerechten_lijst"));
+        }
     if(multi.value.length > 0 && input.value){
         for (var i = multi.value.length - 1; i >= 0; i--) {
 
@@ -127,7 +130,7 @@ class ContentApp extends PolymerElement {
           }
         }
 
-        localStorage.setItem("lijst",JSON.stringify(new_array));
+        localStorage.setItem("gerechten_lijst",JSON.stringify(new_array));
 
         alert("De gerechten zijn in behandeling");
         document.location.reload(true);
