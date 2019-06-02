@@ -35,25 +35,25 @@ class TafelToekennenApp extends PolymerElement {
             }
 
             table, th, td{
-                border: 1px solid black;
-                color: black;
+                border: 1px solid white;
+                color: white;
             }
             h1 {
-              color: black;
+              color: white;
             }
 
             #caller {
-              color: black;
+              color: white;
             }
                     button,
         a {
           margin-top: 30px;
           padding: 5px 10px;
           background: none;
-          border-color: black;
+          border-color: white;
           font-size: 20px;
           color: black;
-          border: 2px solid black;
+          border: 2px solid white;
           text-decoration: none;
         }
 
