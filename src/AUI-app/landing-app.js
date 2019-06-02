@@ -25,6 +25,12 @@ class LandingApp extends PolymerElement {
           color:white;
         }
 
+        #h1 {
+          font-family: sailregular, Arial, sans-serif;
+          font-weight:normal;
+          font-style:normal;
+        }
+
         .welcome {
           padding-top: 200px;
           margin-bottom: 50px;
@@ -39,6 +45,7 @@ class LandingApp extends PolymerElement {
           color: white;
           border: 2px solid white;
           text-decoration: none;
+          transition-duration: 0.5s;
         }
 
         a:hover{
