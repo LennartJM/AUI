@@ -32,8 +32,8 @@ class ContentApp extends PolymerElement {
 
         .content{
           padding:20px;
-              margin-left: -320px;
-                        background-image: url("../../assets/img/bl.jpg");
+          margin-left: -400px;
+          background-image: url("../../assets/img/bg-1.jpg");
           background-size: cover !important;
           background-repeat: no-repeat !important;
           background-position: center center !important;
@@ -54,6 +54,12 @@ class ContentApp extends PolymerElement {
           color: white;
           border: 2px solid white;
           text-decoration: none;
+          transtition-duration: 0.5s;
+        }
+
+        a:hover{
+          background-color: white;
+          color: black;
         }
 
         .tel {
