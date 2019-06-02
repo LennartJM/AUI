@@ -66,7 +66,6 @@ class HeaderApp extends PolymerElement {
           {naam: "Tafel toevoegen", link: "/tafel-toevoegen.html"},
           {naam: "Tafel toekennen", link: "/tafel-toekennen.html"}
 
-
         ]
       }
     };
