@@ -36,25 +36,25 @@ class TafelToekennenApp extends PolymerElement {
             }
 
             table, th, td{
-                border: 1px solid black;
-                color: black;
+                border: 1px solid white;
+                color: white;
             }
             h1 {
-              color: black;
+              color: white;
             }
 
             #caller {
-              color: black;
+              color: white;
             }
                     button,
         a {
           margin-top: 30px;
           padding: 5px 10px;
           background: none;
-          border-color: black;
+          border-color: white;
           font-size: 20px;
-          color: black;
-          border: 2px solid black;
+          color: white;
+          border: 2px solid white;
           text-decoration: none;
         }
 
@@ -62,7 +62,7 @@ class TafelToekennenApp extends PolymerElement {
           width: 300px;
         }
         </style>
-        <h1>Openstaande gerechten</h1>
+        <h1>Tafels :</h1>
         <div class="content">
             <table>
                 <tr style="width:300px !important;">
