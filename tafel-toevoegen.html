@@ -1,27 +1,60 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes" >
-    <title>030 burgers</title>
-    <meta name="description" content="030 Burgerplace">
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
 
-    <!-- See https://goo.gl/OOhYW5 -->
-    <link rel="manifest" href="/manifest.json">
-
-        <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
-        <script type="module" src="/src/AUI-app/header-app.js"></script>
+<dom-module id="tafel_toevoegen">
+<template>
+<style>
+:host {
+display: block;
+}
+</style>
+</template>
+<script>
 
 
+/**
+* @customElement
+* @polymer
+*/
 
-        <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-lite.js"></script>
-
-
-        <style type="text/css"></style>
-  </head>
-  <body>
-    <header-app></header-app>
-
-  </body>
-
-</html>
+class tafel_toevoegen extends Polymer.Element {
+static get is() { return 'tafel_toevoegen'; }
+ getNummer() {
+        var i = 0
+        let new_array = new Array();
+        if (localStorage.getItem("tafel_lijst") === null) {
+          alert("Uw tafel nummer is: 1")
+          new_array.push({tafelnr:1 , status: "vrij"});
+          localStorage.setItem("tafel_lijst",JSON.stringify(new_array)); 
+      }else{
+          var tafellijst = JSON.parse(localStorage.getItem("tafel_lijst"));
+          console.log(tafellijst)
+          var lastTafelnummer = tafellijst.length;
+          var newTafelnummer = lastTafelnummer + 1;
+          alert("Uw tafel nummer is: " + newTafelnummer)
+          tafellijst.push({tafelnr:newTafelnummer, status: "bezet"});
+          localStorage.setItem("tafel_lijst",JSON.stringify(tafellijst)); 
+          }    
+    }
+}
+window.onload = function() {
+  var i = 0
+        let new_array = new Array();
+        if (localStorage.getItem("tafel_lijst") === null) {
+          alert("Uw tafel nummer is: 1")
+          new_array.push({tafelnr:1 , status: "vrij"});
+          localStorage.setItem("tafel_lijst",JSON.stringify(new_array)); 
+          window.history.back();
+      }else{
+          var tafellijst = JSON.parse(localStorage.getItem("tafel_lijst"));
+          console.log(tafellijst)
+          var lastTafelnummer = tafellijst.length;
+          var newTafelnummer = lastTafelnummer + 1;
+          alert("Uw tafel nummer is: " + newTafelnummer)
+          tafellijst.push({tafelnr:newTafelnummer, status: "bezet"});
+          localStorage.setItem("tafel_lijst",JSON.stringify(tafellijst));
+           window.history.back(); 
+          }    
+    };
+window.customElements.define('tafel-toevoegen', tafel_toevoegen);
+</script>
+</dom-module>

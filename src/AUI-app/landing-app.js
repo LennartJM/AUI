@@ -58,7 +58,6 @@ class LandingApp extends PolymerElement {
         <div class="wallp">
             <h1 class="welcome"> [[welkom]] </h1>
             <a href="bestel.html">Naar Bestelmenu</a>
-            <a href="tafel-toevoegen-oud.html">Tafels toevoegen</a>
         </div>
 
     `;
