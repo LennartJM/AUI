@@ -65,6 +65,7 @@ class ContentApp extends PolymerElement {
               width: 60%;
               margin: 0 auto;
               margin-bottom: 50px;
+              color:white;
         }
       </style>
 
@@ -126,7 +127,7 @@ class ContentApp extends PolymerElement {
           }
         }
 
-        localStorage.setItem("gerecht-lijst",JSON.stringify(new_array));
+        localStorage.setItem("lijst",JSON.stringify(new_array));
 
         alert("De gerechten zijn in behandeling");
         document.location.reload(true);
