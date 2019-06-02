@@ -38,3 +38,12 @@ body {
 .row img {
 	margin-bottom: 5px;
 }
+
+@font-face {
+font-family: "sailregular";
+src: url("css/fonts/sailregular.eot");
+src:
+url("css/fonts/sailregular.woff") format("woff"),
+url("css/fonts/sailregular.otf") format("opentype"),
+url("css/fonts/sailregular.svg#filename") format("svg");
+}
