@@ -15,7 +15,7 @@ class TafelToekennenApp extends PolymerElement {
 
             :host {
               display: block;
-              background-image: url("../../assets/img/bl.jpg");
+              background-image: url("../../assets/img/bg-1.jpg");
               background-size: cover !important;
               background-repeat: no-repeat !important;
               background-position: center center !important;
