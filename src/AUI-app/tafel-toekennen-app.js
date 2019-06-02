@@ -114,4 +114,4 @@ class TafelToekennenApp extends PolymerElement {
 
 }
 
-window.customElements.define('tafel-toekennen', TafelToekennenApp);
+window.customElements.define('tafel-toekennen-app', TafelToekennenApp);
