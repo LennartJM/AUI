@@ -13,7 +13,7 @@ class GerechtContentApp extends PolymerElement {
 
             :host {
               display: block;
-              background-image: url("../../assets/img/bl.jpg");
+              background-image: url("../../assets/img/bg-1.jpg");
               background-size: cover !important;
               background-repeat: no-repeat !important;
               background-position: center center !important;
@@ -64,9 +64,9 @@ class GerechtContentApp extends PolymerElement {
         <div class="content">
             <table>
                 <tr style="width:300px !important;">
-                <th style = width:10%>Tafelnummer</th>
-                <th style = width:70%>Gerechtnaam</th>
-                <th style = width:30%>Gerechtstatus</th>
+                <th style = width:15%>Tafelnummer</th>
+                <th style = width:60%>Gerechtnaam</th>
+                <th style = width:35%>Gerechtstatus</th>
                 </tr>
                 <template is="dom-repeat" items="{{Bestellingen}}" as="bestelling">
                         <tr>
