@@ -9,7 +9,7 @@ INSTALLATIEHANDLEIDING:
 
 1.Pull het project van github.
 
-2.Pak de rar "dependencies" uit en zet de mappen "bower_components" en "node_models" in de root van het project.
+2.Pak de rar "bower_components" uit en zet de mappen "bower_components" in de root van het project.
 
 3.Open een commandline prompt en voer "bower update" uit ( zonder de haakjes).
 
